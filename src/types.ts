@@ -32,6 +32,15 @@ export interface Level {
   maxPoints: number;
 }
 
+export interface GameLevel {
+  id: number;
+  clues: string[];
+  answer: string;
+  hint: string;
+  points: number;
+  difficulty: 'beginner' | 'advanced';
+}
+
 export interface UserState {
   points: number;
   level: string;
@@ -39,4 +48,8 @@ export interface UserState {
   badges: string[];
   perfectQuizzes: number;
   scamsSpotted: number;
+  gameProgress: {
+    fourClues: number;
+  };
+  lastDailyChallengeDate?: string;
 }

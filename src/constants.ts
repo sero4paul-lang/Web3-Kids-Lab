@@ -1,133 +1,157 @@
-import { Mission, Badge, Level } from './types';
+import { Mission, Badge, Level, GameLevel } from './types';
 
 export const MISSIONS: Mission[] = [
   {
-    id: 'digital-money',
-    title: 'What is Digital Money?',
-    description: 'Byte the Bird wants to buy a snack online.',
+    id: 'mission-1',
+    title: 'Mission 1: What is Digital Money?',
+    description: 'Byte learns about digital money and its uses in Web3.',
     icon: 'Coins',
     character: 'Byte',
-    points: 10,
-    content: "Byte the Bird wants to buy a snack online. She learns that money can exist digitally, not just as coins or notes. Byte is curious and excited to explore!",
-    verseContext: "Prepares for Verse: Sending/Receiving",
+    points: 5,
+    content: "Byte learns about digital money and its uses in Web3.",
+    verseContext: "Understanding digital assets is the first step into the Verse.",
     quiz: [{
-      question: "What is digital money?",
-      options: ["Money you can touch", "Money that exists digitally", "Candy coins"],
+      question: "Which of these is digital money?",
+      options: ["Cash", "Crypto", "Gold", "Stamps"],
       correctAnswer: 1,
-      correctFeedback: "Byte: Correct! Digital money is used online safely. | Builder: Digital money exists virtually. | Alert: Remember: Digital money is real!",
-      wrongFeedback: "Byte: Oops! Digital money exists digitally. | Builder: Check carefully. | Alert: Never confuse real and digital money!"
+      correctFeedback: "Well done! +5 points ⭐",
+      wrongFeedback: "Try again! Hint: It’s digital money used online."
     }]
   },
   {
-    id: 'blockchain-basics',
-    title: 'Introduction to Blockchain',
-    description: 'How digital money moves safely.',
+    id: 'mission-2',
+    title: 'Mission 2: Introduction to Blockchain',
+    description: 'Byte explores blockchain and how transactions are recorded safely.',
     icon: 'Link',
     character: 'Builder',
-    points: 15,
-    content: "Byte learns that digital money moves safely online thanks to blockchain. It’s like a notebook everyone can trust.",
-    verseContext: "Prepares for Verse: Ledger & Verification",
+    points: 5,
+    content: "Byte explores blockchain and how transactions are recorded safely.",
+    verseContext: "Blockchain is the foundation of trust in the digital world.",
     quiz: [{
-      question: "What does blockchain do?",
-      options: ["Makes candy", "Records transactions safely", "Makes your phone work"],
+      question: "What safely records transactions?",
+      options: ["Notebook", "Blockchain", "Wallet", "Bank"],
       correctAnswer: 1,
-      correctFeedback: "Builder: Yes! Blockchain keeps things secure. | Byte: It’s like a notebook everyone trusts. | Alert: Safety first!",
-      wrongFeedback: "Builder: Blockchain records transactions safely. | Byte: Try again carefully. | Alert: Pay attention to the lesson!"
+      correctFeedback: "Nice! +5 points ⭐",
+      wrongFeedback: "Hint: It’s a system that links blocks of data together."
     }]
   },
   {
-    id: 'digital-wallets',
-    title: 'Verse & Web3 Wallets',
-    description: 'Keeping your digital pockets safe.',
+    id: 'mission-3',
+    title: 'Mission 3: Verse & Web3 Wallets',
+    description: 'Byte learns about wallets and private keys.',
     icon: 'Wallet',
     character: 'Builder',
-    points: 15,
-    content: "Builder explains wallets to Byte: digital pockets that keep money safe. Byte is ready to learn how to use hers safely.",
-    verseContext: "Prepares for Verse: Wallet Management",
+    points: 5,
+    content: "Byte learns about wallets and private keys.",
+    verseContext: "Your wallet is your gateway and identity in the Verse.",
     quiz: [{
-      question: "What is a digital wallet?",
-      options: ["A bag you carry", "A safe place for digital money", "A magic book"],
-      correctAnswer: 1,
-      correctFeedback: "Builder: Correct! Wallets keep coins safe. | Alert: Never share your private key! | Byte: I’ll always keep my wallet safe.",
-      wrongFeedback: "Builder: Wallets store digital money safely. | Alert: Sharing your key is unsafe. | Byte: Remember this!"
+      question: "Where do you store digital money safely?",
+      options: ["Wallet", "Pocket", "Bank", "Drawer"],
+      correctAnswer: 0,
+      correctFeedback: "Correct! +5 points ⭐",
+      wrongFeedback: "Hint: It’s digital and stores crypto safely."
     }]
   },
   {
-    id: 'safety-first',
-    title: 'Spotting Scams',
-    description: 'Decide wisely when strangers message.',
+    id: 'mission-4',
+    title: 'Mission 4: Spotting Scams',
+    description: 'Byte discovers how to identify fake offers and scams.',
     icon: 'ShieldAlert',
     character: 'Alert',
-    points: 20,
-    content: "Someone messages Byte: 'Send 5 coins and get 10!' Alert warns her it might be a scam. Byte must decide wisely.",
-    verseContext: "Prepares for Verse: Avoid Fake Apps & Scams",
+    points: 5,
+    content: "Byte discovers how to identify fake offers and scams.",
+    verseContext: "Staying alert keeps you and your assets safe from tricks.",
     quiz: [{
-      question: "What should Byte do?",
-      options: ["Send coins", "Ignore and learn", "Ask a stranger"],
-      correctAnswer: 1,
-      correctFeedback: "Alert: Yes! Never trust quick coin promises. | Byte: I’ll always check first! | Builder: Learning before acting is smart!",
-      wrongFeedback: "Alert: Incorrect. Never send coins to strangers. | Byte: I’ll pay more attention. | Builder: Safety first!"
+      question: "What should you avoid online?",
+      options: ["Scam", "Crypto", "Wallet", "Badge"],
+      correctAnswer: 0,
+      correctFeedback: "Well done! +5 points ⭐",
+      wrongFeedback: "Hint: Something fake that tries to trick you."
     }]
   },
   {
-    id: 'safe-posting',
-    title: 'Safe Interaction & Posting',
-    description: 'Share safely without giving away info.',
+    id: 'mission-5',
+    title: 'Mission 5: Safe Interaction & Posting',
+    description: 'Byte learns safe communication in the Web3 world.',
     icon: 'Share2',
     character: 'Builder',
-    points: 15,
-    content: "Byte wants to post about what she learned. Builder shows her how to share safely without giving away private information.",
-    verseContext: "Prepares for Verse: Community & Messaging",
+    points: 5,
+    content: "Byte learns safe communication in the Web3 world.",
+    verseContext: "Kindness and safety are the rules of our community.",
     quiz: [{
-      question: "Which post is safe?",
-      options: ["I just deposited 10 coins, here’s my address", "I learned something new today, here’s a tip", "Send me coins and I’ll double them"],
-      correctAnswer: 1,
-      correctFeedback: "Builder: Sharing tips is safe; sharing money info is not. | Byte: I’ll be careful what I post. | Alert: Safety online is important!",
-      wrongFeedback: "Builder: Only share tips, not private info. | Alert: Never share wallet info. | Byte: Got it!"
+      question: "What is important when posting online?",
+      options: ["Safety", "Speed", "Sharing everything", "Ignoring rules"],
+      correctAnswer: 0,
+      correctFeedback: "Correct! +5 points ⭐",
+      wrongFeedback: "Hint: Protect yourself and your information."
     }]
   },
   {
-    id: 'digital-decisions',
-    title: 'Making Small Digital Decisions',
-    description: 'Check rules and safety first.',
+    id: 'mission-6',
+    title: 'Mission 6: Making Small Digital Decisions',
+    description: 'Byte practices safe transactions and checks rules.',
     icon: 'Gamepad2',
     character: 'Builder',
-    points: 15,
-    content: "Byte sees a mini game promising coins. Builder explains she must check rules and safety first.",
-    verseContext: "Prepares for Verse: Promotions & Peer-to-Peer Offers",
+    points: 5,
+    content: "Byte practices safe transactions and checks rules.",
+    verseContext: "Every decision you make helps build a better Verse.",
     quiz: [{
-      question: "What should Byte do before playing?",
-      options: ["Play immediately", "Check rules & safety", "Ask strangers"],
-      correctAnswer: 1,
-      correctFeedback: "Builder: Check rules first. Good thinking! | Alert: Safety first! | Byte: I feel ready to make smart choices.",
-      wrongFeedback: "Builder: Check rules before trying any task. | Alert: Never trust strangers! | Byte: I’ll do better next time."
+      question: "Before making a transaction, you should?",
+      options: ["Check rules", "Send blindly", "Ignore alerts", "Share keys"],
+      correctAnswer: 0,
+      correctFeedback: "Good job! +5 points ⭐",
+      wrongFeedback: "Hint: Always review before acting."
     }]
   },
   {
-    id: 'final-review',
-    title: 'Review & Level Up',
-    description: 'Ready for more adventures!',
+    id: 'mission-7',
+    title: 'Mission 7: Review & Level Up',
+    description: 'Byte completes all missions and prepares for advanced learning.',
     icon: 'PartyPopper',
     character: 'Byte',
-    points: 30,
-    content: "Byte has completed all missions and is excited to level up. She’s ready to explore Web3 safely and confidently.",
-    verseContext: "Prepares for Verse: Full Participation",
+    points: 5,
+    content: "Byte completes all missions and prepares for advanced learning.",
+    verseContext: "You've mastered the basics! The Verse is yours to explore.",
     quiz: [{
-      question: "How can Byte continue learning safely?",
-      options: ["Experiment without guidance", "Follow missions and tips", "Share coins with strangers"],
-      correctAnswer: 1,
-      correctFeedback: "Byte: Yay! I did it! Ready for more adventures! 🎉 | Builder: Following tips keeps you safe and learning fast. 🛠 | Alert: Always remember: safety first! 🛑",
-      wrongFeedback: "Byte: Oops! I need to follow tips. 😅 | Builder: Guidance helps you learn safely. 🛠 | Alert: Never share coins without checking! 🛑"
+      question: "What is the main goal of Web3 Kids Lab?",
+      options: ["Learning safely", "Earning immediately", "Ignoring rules", "Sharing private keys"],
+      correctAnswer: 0,
+      correctFeedback: "Awesome! +5 points ⭐",
+      wrongFeedback: "Hint: Focus on understanding first."
     }]
   }
+];
+
+export const FOUR_CLUES_LEVELS: GameLevel[] = [
+  {"id":1,"clues":["💻","🌐","🔗","📊"],"answer":"Blockchain","hint":"A system that records transactions safely","points":5,"difficulty":"beginner"},
+  {"id":2,"clues":["🔐","💰","📱","👛"],"answer":"Wallet","hint":"Where you store digital money","points":5,"difficulty":"beginner"},
+  {"id":3,"clues":["⚠️","😱","💸","❌"],"answer":"Scam","hint":"Something you must avoid","points":5,"difficulty":"beginner"},
+  {"id":4,"clues":["🪙","💻","🌍","💱"],"answer":"Crypto","hint":"Digital money used online","points":5,"difficulty":"beginner"},
+  {"id":5,"clues":["📤","💸","📩","🔁"],"answer":"Transfer","hint":"Sending money from one place to another","points":5,"difficulty":"beginner"},
+  {"id":6,"clues":["🧾","🔍","✔️","🔗"],"answer":"Verify","hint":"Checking if a transaction is correct","points":5,"difficulty":"beginner"},
+  {"id":7,"clues":["👤","🔑","🔒","❗"],"answer":"Private","hint":"Something you should never share (your key)","points":5,"difficulty":"beginner"},
+  {"id":8,"clues":["📊","📖","🧾","🌐"],"answer":"Ledger","hint":"A record of all transactions","points":5,"difficulty":"beginner"},
+  {"id":9,"clues":["👥","💬","🌍","📱"],"answer":"Community","hint":"People interacting and learning together","points":5,"difficulty":"beginner"},
+  {"id":10,"clues":["🎯","📚","🚀","🧠"],"answer":"Learn","hint":"What you are doing right now","points":5,"difficulty":"beginner"},
+  {"id":11,"clues":["🪙","🏷","📊","💱"],"answer":"Token","hint":"A digital asset on a blockchain","points":10,"difficulty":"advanced"},
+  {"id":12,"clues":["🎨","🖼","🔗","💎"],"answer":"NFT","hint":"A unique digital item you can own","points":10,"difficulty":"advanced"},
+  {"id":13,"clues":["⛽","💸","⚙️","🔗"],"answer":"Gas","hint":"Fee paid to complete transactions","points":10,"difficulty":"advanced"},
+  {"id":14,"clues":["📜","🤝","🔗","⚙️"],"answer":"Contract","hint":"A smart agreement on blockchain","points":10,"difficulty":"advanced"},
+  {"id":15,"clues":["🌐","🚫","🏦","🔗"],"answer":"DeFi","hint":"Finance without banks","points":10,"difficulty":"advanced"},
+  {"id":16,"clues":["🔑","📥","💻","👤"],"answer":"Access","hint":"What your key gives you","points":10,"difficulty":"advanced"},
+  {"id":17,"clues":["📉","📈","💹","🧠"],"answer":"Trade","hint":"Buying and selling assets","points":10,"difficulty":"advanced"},
+  {"id":18,"clues":["🏦","❌","🌐","🔗"],"answer":"Decentralized","hint":"No central control","points":10,"difficulty":"advanced"},
+  {"id":19,"clues":["🧑💻","🛠","🌐","⚙️"],"answer":"Builder","hint":"Someone who creates in Web3","points":10,"difficulty":"advanced"},
+  {"id":20,"clues":["🚀","🌍","🔗","💡"],"answer":"Web3","hint":"The future of the internet","points":10,"difficulty":"advanced"}
 ];
 
 export const BADGES: Badge[] = [
   { id: 'digital-beginner', name: 'Digital Beginner', description: 'Completed Mission 1!', icon: 'Coins', color: 'bg-yellow-400' },
   { id: 'blockchain-explorer', name: 'Blockchain Explorer', description: 'Mastered the basics of Blockchain!', icon: 'Link', color: 'bg-blue-400' },
   { id: 'safety-star', name: 'Safety Star', description: 'Spotted all the scams!', icon: 'ShieldCheck', color: 'bg-green-400' },
-  { id: 'quiz-master', name: 'Quiz Master', description: 'Perfect score on 2 quizzes!', icon: 'Zap', color: 'bg-purple-400' },
-  { id: 'level-up', name: 'Level Up!', description: 'Reached a new level!', icon: 'PartyPopper', color: 'bg-orange-400' }
+  { id: 'web3-explorer', name: 'Web3 Explorer', description: 'Exploring the future of the internet!', icon: 'Globe', color: 'bg-purple-400' },
+  { id: 'crypto-master', name: 'Crypto Master', description: 'Mastered digital money!', icon: 'Zap', color: 'bg-orange-400' },
+  { id: 'quiz-master', name: 'Quiz Master', description: 'Perfect score on quizzes!', icon: 'Sparkles', color: 'bg-indigo-400' }
 ];
 
 export const LEVELS: Level[] = [
